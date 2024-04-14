@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(88, 106, 134);
+            display: grid;
+            place-items: center;
+        }
+        .parent{
+            border-radius: 20px;
+            width: 600px;
+            height: 400px;
+            background-color: rgb(5, 5, 82);
+            position: relative;
+            border: 5px solid white;
+            box-shadow: 2px 2px 10px black;
+            padding: 1rem 1rem;
+            transition:all 0.3s linear;
+        }
+        .parent:hover{
+           filter: brightness(50%);
+        }
+        .child{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(45, 45, 181);
+            border: 5px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            font-size: 1.5rem;
+            color: white;
+            position: absolute;
+        }
+        #child1{
+            z-index: 5;
+            width: 130px;
+            height: 80px;
+            
+        }
+        #child2{
+            z-index: 4;
+            width: 160px;
+            height: 110px;
+            display: flex;
+            justify-content: end;
+        }
+        #child3{
+            z-index: 3;
+            width: 190px;
+            height: 140px;
+            display: flex;
+            justify-content: end;
+        }
+        #child4{
+            z-index: 2;
+            width: 220px;
+            height: 170px;
+            display: flex;
+            justify-content: end;
+        }
+        #child5{
+            z-index: 1;
+            width: 250px;
+            height: 200px;
+            display: flex;
+            justify-content: end;
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-INDEX IN CSS</h1>
+    <div class="parent">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+    </div>
+</body>
+</html>

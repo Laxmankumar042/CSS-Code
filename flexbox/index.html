@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+            .container{
+                max-width: 80%;
+                margin:90px auto;
+                height: 70vh;
+                padding: 5rem;
+                background-color: beige;
+              border: 10px solid black;
+              border-radius: 40px;
+                display: flex;
+                gap: 1rem;
+            /* Flex-direction properties */
+            /* if, flex-direction: row then main axis is horizontal */
+            /* if, flex-direction: column then main axis is vertical */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /*Flex-wrap properties */
+            /* jab tak space hai box apna size maintain rakhega space nahi hogo toh shrink karega */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+           
+
+            /* justify content */
+            /* main axis ke according items ko place karta hai */
+             justify-content: center;
+            /* justify-content: start;
+            justify-content: end;
+            justify-content:space-between; */ 
+            /* fist and last box flex-container se sata hota hai or space equal hota hai box ke bich */
+            /* justify-content: space-around; */
+            /* flex-item ke aage piche same space aa jata hai */
+            /* justify-content: space-evenly; */
+            /* flex-itme ke bich equl space hota hai */
+
+            /* Align-items */
+            /* cross axis ke according items ko place karta hai */
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: stretch; */ 
+
+            /* align-content */
+            /* wrap on krte hai or items ke bich main space handle krna hota hai toh use karte hai */
+            /* align-content: start; */
+            /* align-content: end; */
+            align-content: center; 
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 5px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3rem;
+                border-radius: 50%;
+            }
+            #box1{
+                background-color: rgb(241, 70, 70);
+            }
+            #box2{
+                background-color: rgb(76, 76, 250);
+            }
+            #box3{
+                background-color: rgb(47, 236, 47);
+                /* Current width ko overwrite kar deta hai */
+                /* flex-basis: 200px; */
+                /* only box3 center hoga */
+                /* align-self: center; */
+            }
+            #box4{
+                background-color: rgb(244, 244, 50);
+                /* Jitna space hai sab cover kar lega box4 */
+                /* flex-grow: 1; */
+                /* jab container co chota karenge toh jyada speed se shink hoga */
+                /* flex-shrink: 5; */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box1">5</div>
+        <div class="box" id="box2">6</div>
+        <div class="box" id="box3">7</div>
+        <div class="box" id="box4">8</div>
+    </div>
+</body>
+</html>

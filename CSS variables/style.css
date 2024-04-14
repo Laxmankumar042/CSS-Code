@@ -1,0 +1,16 @@
+:root{
+    --color : rgb(255, 0, 0);
+    --bgcolor : green;
+}
+
+div{
+    color: var(--color);
+    background-color: var(--bgcolor);
+}
+p{
+    color: var(--color);
+}
+
+button{
+    background-color: var(--bgcolor);
+}

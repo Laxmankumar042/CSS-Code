@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this variable is applicable in whole website */
+        :root{
+            --primary-color:lightgreen;
+            --custom-width:10px;
+        }
+        *{
+            /* margin: 0px;
+            padding: 0px; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+             /* width: 800px; */
+             height: 500px;
+             background-color: beige;
+             border: 5px solid black;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        img{
+            margin: 20px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            border: 5px solid rgb(4, 123, 83);
+            /* creation of variables */
+            --primary-color:lightgreen;
+            --custom-width:10px;
+
+            /* X Y color */
+            box-shadow: 20px 20px red;
+
+            /* X Y blur color */
+            box-shadow: 10px 10px 40px red;
+
+            /* X Y blur spread color */
+            box-shadow: 10px 10px 20px 60px brown;
+
+            /* insert X Y color */
+            /* isme sab same hoga bas inset lagana hoga fist mein */
+            box-shadow: inset 10px 10px  black;
+
+            /* multi color shadow */
+            box-shadow: 10px var(--custom-width) black, 40px 40px var(--primary-color);
+        }
+        h2,p{
+            margin: 20px;
+        }
+        h2{
+            /* X Y blur color */
+            text-shadow: 2px 3px 5px red;
+
+            /* color X Y blur */
+            text-shadow: brown 2px 3px 5px;
+
+            /* multicolor shodow */
+            text-shadow: 5px 5px 5px red,10px 10px 5px blue,20px 20px 5px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <img src="pngwing.com.png" alt="google" height="50px">
+    <h2>Wecome to google</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aspernatur ut mollitia, natus iste excepturi corporis odit cupiditate dolore eligendi!</p>
+</div>
+</div>
+</body>
+</html>

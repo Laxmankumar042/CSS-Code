@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+       body{
+        width: 100%;
+        height: 100vh;
+       }
+       .box{
+        width: 100px;
+        height: 100px;
+        background-color: darkseagreen;
+        border: 2px solid black;
+        margin: 2rem;
+        transition: all 0.5s linear;
+       }
+       #translate:hover{
+        /* transform: translate(200px,200px);  */
+        /*(x,y)*/
+        /* transform: translateX(200px); */
+        /* transform: translatey(200px); */
+
+        /* we can only write translate */
+        translate: 400px 90px;
+       }
+       #scale:hover{
+        /* transform: scale(2); */
+        scale: 2;
+        /* transform: scaleX(3); */
+        /* transform: scaleY(3); */
+       }
+       #rotate:hover{
+        transform: rotate(90deg);
+        transform: rotatex(360deg);
+        transform: rotatey(80deg);
+       }
+       #skew:hover{
+        transform: skew(20deg);
+        transform: skewx(20deg);
+        transform: skewy(20deg);
+       }
+    </style>
+</head>
+<body>
+    <!-- uses: karne ke liye bara, rotate , increase , move etc -->
+    <div class="content">
+        <div class="box" id="translate">Translate</div>
+        <div class="box" id="rotate">Rotate</div>
+        <div class="box" id="skew">Skew</div>
+        <div class="box" id="scale">Scale</div>
+        <!-- <div class="box" id="translate">Translate</div>
+        <div class="box" id="translate">Translate</div> -->
+     </div>
+</body>
+</html>

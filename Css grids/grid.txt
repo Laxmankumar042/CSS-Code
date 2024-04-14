@@ -1,0 +1,15 @@
+gap
+row-gap
+columns-gap
+grid-template-rows
+grid-template-columns
+grid-columns-start (grid-column:start/end)
+grid-rows-start  (grid-row : start/end)
+justify-items
+align-items
+justify-self
+align-self
+place-items
+auto-fit
+grid-auto-row
+grid-auto-column

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: antiquewhite;
+            border: 5px solid black;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .leftdiv{
+            margin-left: 10px;
+        }
+        .rightdiv{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:626px){
+            .container{
+                flex-direction: column;
+                /* width: 400px; */
+            }
+            .leftdiv{
+                display: flex;
+                flex-direction: column;
+            }
+            .rightdiv{
+                display: flex;
+                flex-direction: column;
+            }
+            img{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftdiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe beatae nisi delectus temporibus ut recusandae exercitationem velit ipsum iure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, esse.</p>
+        </div>
+        <div class="rightdiv">
+            <img src="dog.jpg" alt="dog_image">
+        </div>
+    </div>
+</body>
+</html>

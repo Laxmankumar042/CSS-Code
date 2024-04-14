@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practic 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            padding: 5rem;
+        }
+        .container1{
+            border: 8px solid black;
+            margin-bottom: 3rem;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 0.5rem;
+            background-color: rgb(245, 245, 162);
+            padding: 4rem;
+            grid-template-areas: 
+              "a a b"
+              "a a c"
+              "d e e"
+              "f e e"
+              "g g h"
+              "g g i"
+            ;
+        }
+        .item{
+            background-color: rgb(108, 7, 7);
+            border: 5px solid rgb(0, 0, 0);
+            padding: 1rem;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        #a{
+            grid-area: a;
+        }
+        #b{
+            grid-area: b;
+        }
+        #c{
+            grid-area: c;
+        }
+        #d{
+            grid-area: d;
+        }
+        #e{
+            grid-area: e;
+        }
+        #f{
+            grid-area: f;
+        }
+        #g{
+            grid-area: g;
+        }
+        #h{
+            grid-area: h;
+        }
+        #i{
+            grid-area: i;
+        }
+       
+        #a1{
+            grid-area: a1;
+        }
+        #a2{
+            grid-area: a2;
+        }
+        #a3{
+            grid-area: a3;
+        }
+        #a4{
+            grid-area: a4;
+        }
+        #a5{
+            grid-area: a5;
+        }
+        #a6{
+            grid-area: a6;
+        }
+        #a1{
+            grid-area: a1;
+        }
+        #a7{
+            grid-area: a7;
+        }
+        #a8{
+            grid-area: a8;
+        }
+        #a9{
+            grid-area: a9;
+        }
+        #a10{
+            grid-area: a10;
+        }
+        #a11{
+           grid-area: a11;
+        }
+        #a15{
+            grid-area: a15;
+        }
+        #a12{
+            grid-area: a12;
+        }
+        #a13{
+            grid-area: a13;
+        }
+        #a14{
+            grid-area: a14;
+        }
+        
+        .container2{
+            border: 8px solid black;
+            
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 0.5rem;
+            background-color: rgb(245, 245, 162);
+            padding: 4rem;
+            grid-template-areas: 
+             "a1 a1 a2 a3"
+             "a1 a1 a4 a5"
+             "a6 a7 a8 a8"
+             "a9 a10 a8 a8"
+            "a11 a11 a12 a13"
+            "a11 a11 a14 a15"
+            ;
+        }
+        @media  (max-width:700px){
+            .container2{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 0.5rem;
+            background-color: rgb(245, 245, 162);
+            padding: 4rem;
+            grid-template-areas: 
+             "a1"
+             "a2"
+             "a3"
+             "a4"
+             "a5"
+             "a6"
+             "a7"
+             "a8"
+             "a9"
+             "a10"
+             "a11"
+             "a12"
+             "a13"
+             "a14"
+             "a15"
+            ;
+        }
+    }
+        @media (max-width:700px){
+            .container1{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 0.5rem;
+            background-color: rgb(245, 245, 162);
+            padding: 4rem;
+            grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            ;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item" id="a">a</div>
+        <div class="item" id="b">b</div>
+        <div class="item" id="c">c</div>
+        <div class="item" id="d">d</div>
+        <div class="item" id="e">e</div>
+        <div class="item" id="f">f</div>
+        <div class="item" id="g">g</div>
+        <div class="item" id="h">h</div>
+        <div class="item" id="i">i</div>
+    </div>
+    <div class="container2">
+        <div class="item" id="a1">1</div>
+        <div class="item" id="a2">2</div>
+        <div class="item" id="a3">3</div>
+        <div class="item" id="a4">4</div>
+        <div class="item" id="a5">5</div>
+        <div class="item" id="a6">6</div>
+        <div class="item" id="a7">7</div>
+        <div class="item" id="a8">8</div>
+        <div class="item" id="a9">9</div>
+        <div class="item" id="a10">10</div>
+        <div class="item" id="a11">11</div>
+        <div class="item" id="a12">12</div>
+        <div class="item" id="a13">13</div>
+        <div class="item" id="a14">14</div>
+        <div class="item" id="a15">15</div>
+    </div>
+</body>
+</html>

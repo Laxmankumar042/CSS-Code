@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont1{
+            width: 100%;
+            height: 100vh;
+            background-color: blueviolet;
+        }
+        .cont2{
+            width: 100%;
+            height: 100vh;
+            background-color: beige;
+        }
+        .cont{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(86, 86, 29);
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: red;
+            position: fixed;
+            bottom: 0;
+            z-index: 2;
+
+        }
+        /*
+        Note : jab v sticky(upne div mein fixed) use kare to usko position dena jauri hai ki kha skicky krna hai (eg:bottm,top,left,right)
+        */
+        span{
+            display: inline-block;
+            background-color: chartreuse;
+            padding: 10px 50px;
+            /* margin: 50px auto; */
+            position: sticky;
+            top: 50%;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont1">
+        <nav></nav>
+    </div>
+    <div class="cont2">
+        <span>Hello</span>
+    </div>
+    <div class="cont"></div>
+</body>
+</html>

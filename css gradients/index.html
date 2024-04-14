@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRADIENTS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .section{
+            width: 100%;
+            height: 100vh;
+
+            /* Linear-gradients */
+
+            /* background-image: linear-gradient(red,yellow);
+            background-image: linear-gradient(to right,red,yellow);
+            background-image: linear-gradient(to top,red,yellow);
+            background-image: linear-gradient(to bottom right,red,yellow);
+            background-image: linear-gradient(to top left,red,yellow);
+            background-image: repeating-linear-gradient(to top left,rgb(128, 127, 127),yellow 50px); */
+
+            /* background-image: linear-gradient(to right top,rgba(94, 226, 12, 0.564),rgba(25, 10, 234, 0.518)), url("pexels-garrett-morrow-682933.jpg");
+            background-position: top right;
+            background-size: 100% 100%; */
+
+
+            
+
+            /* Radial-gradients */
+
+            background-image: repeating-radial-gradient(circle,rgba(62, 3, 96, 0.902),rgb(0, 0, 0) 10rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            background-attachment: fixed;
+        }
+        #s2{
+            background-image: repeating-radial-gradient(circle,rgba(255, 234, 1, 0.902),rgb(0, 0, 0) 10rem);
+        }
+        #s3{
+            background-image: repeating-radial-gradient(circle,rgba(236, 13, 13, 0.902),rgb(0, 0, 0) 10rem);
+        }
+        #s4{
+            background-image: repeating-radial-gradient(circle,rgba(24, 232, 93, 0.902),rgb(0, 0, 0) 10rem);
+        }
+        h1{
+            font-size: 5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 5px 5px 3px black;
+        }
+        p{
+            font-size: 1.5rem;
+            font-family:cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quas?</p>
+    </div> 
+    <div class="section" id="s2">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quas?</p>
+    </div> 
+    <div class="section" id="s3">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quas?</p>
+    </div> 
+    <div class="section" id="s4">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quas?</p>
+    </div> 
+</body>
+</html>

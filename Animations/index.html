@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        /* process of moving an elements from one styling to unother syling called animation */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            /* height: 100vh; */
+            background-color: rgb(26, 0, 0);
+            border: 5px solid rgb(247, 247, 247);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+        }
+        .box{
+            width: 330px;
+            height: 80px;
+            background-color: rgb(78, 5, 5);
+            border: 5px solid brown;
+            margin: 10px;
+            border-radius: 10px;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            /* for same speed */
+            animation-timing-function: linear;
+
+            /* for slow starting */
+            animation-timing-function: ease-in;
+
+            /* for slow ending */
+            animation-timing-function: ease-out;
+
+            /* for slow start and end */
+            animation-timing-function: ease-in-out;
+
+            /* apne accourding */
+            /* animation-timing-function:cubic-bezier(0.97,-0.53, 0.44, 1) */
+
+            /* source to destination and destination to source */
+            animation-direction: alternate;
+
+            /* animation start from oppostite direction */
+            /* animation-direction: reverse; */
+
+            /* animation start from destination and end at source */
+            /* animation-direction: alternate-reverse; */
+            
+            /* animation start se pahale ya khatam hone ke baad kya karna hai */
+            /* animatin khatam hone ke baad rukna */
+            animation-fill-mode: forwards;
+            /* animatin start hone ke pahale rukna */
+            animation-fill-mode: backwards;
+
+            animation-fill-mode: both;
+
+
+        }
+        @keyframes rightmovement{
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                 left: 30%;
+            }
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(78, 5, 5);
+            border: 5px solid rgb(78, 5, 5)
+            margin: 10px;
+            color: white;
+            display:grid;
+            place-items: center;
+            animation: rotate 0.2s linear infinite;
+        }
+        @keyframes rotate {
+            from{
+                rotate: 0deg;
+                /* transform-origin: left; */
+            }
+            to{
+                rotate: 360deg;
+                /* translate: 200px; */
+                /* transform-origin: left; */
+
+
+            }
+        }
+        .skew{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(78, 5, 5);
+            border: 5px solid brown;
+            margin: 10px;
+            color: white;
+            display:grid;
+            place-items: center;
+            animation: skew 0.2s linear infinite alternate;
+        }
+        @keyframes skew {
+            from{
+                transform: skew(0deg);
+            }
+            to{
+                transform: skew(40deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="skew"></div>
+    </div>
+</body>
+</html>

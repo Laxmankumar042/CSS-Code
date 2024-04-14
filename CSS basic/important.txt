@@ -1,0 +1,2 @@
+* If same property is applied on any tag using internal,external and inline CSS then property applied who written at the end.
+* Using !important we can give highest prefrence to intenal,external or inline CSS

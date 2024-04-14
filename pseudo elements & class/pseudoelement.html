@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        /* ::Befor (add content before content)
+        ::after   (add content after content)
+        ::first-line (edit fist line )
+        ::first-letter (edit fist letter)
+        ::selection  (select krne par bgcolor change hota hai)
+        ::placeholder */
+
+        h1{
+            position: relative;
+        }
+        h1::before{
+            content:"Laxman ";
+            position: absolute;
+            font-size: 14px;
+            top:-20px;
+            color: red;
+        }
+        h1::after{
+            content:" Laxman";
+            position: absolute;
+            font-size: 20px;
+            top: 40px;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        p::first-line{
+            color: green;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        p::selection{
+            background-color: #c29191;
+        }
+    </style>
+</head>
+<body>
+   <h1>Hello</h1>
+   <br>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quaerat assumenda officia magnam eos ab! Quasi dolores illo iste quod repellendus aliquid veritatis quibusdam incidunt, praesentium, quam in odio nihil.
+   Nihil maiores adipisci eum asperiores. Eaque, officia doloremque. Dolore neque laborum alias fugit quae omnis voluptatibus molestiae quasi explicabo corporis sapiente saepe repellat id suscipit vel deserunt quas, labore quaerat.
+   Quaerat illo aspernatur alias, distinctio iure officia iste sed quod provident odio veritatis veniam dolores, placeat nulla nam voluptates natus eligendi blanditiis libero deleniti cumque. Molestias porro aliquam sit harum?
+   Quos, voluptatum voluptate. Repellendus quibusdam a velit voluptates exercitationem veritatis, commodi laudantium explicabo incidunt omnis aperiam rem aspernatur. Eum voluptates ratione nam rem corrupti harum porro animi. Sunt, ea voluptatibus.
+   Ducimus veniam quod animi nemo ratione repellendus sapiente molestias eaque illum iure consequatur placeat numquam eligendi, tempore expedita iusto non doloribus quo temporibus? Blanditiis ipsam autem accusamus voluptatum, asperiores earum?
+   Error natus quasi distinctio necessitatibus quia quae at, nemo beatae nisi ea quidem assumenda laudantium laborum sint? Debitis rerum fugit consequatur quod modi, esse sed, accusantium qui error iure exercitationem.
+   Voluptas consequuntur sit officia saepe aspernatur incidunt nostrum at harum recusandae! Tempore quo a fugiat eum sunt, facilis nesciunt magni iusto vero, rerum numquam pariatur, minima dolorum inventore consequatur fuga!
+   Omnis, cum! Hic explicabo officia laudantium assumenda perspiciatis ullam fuga nam rerum voluptatem, temporibus quisquam, eveniet dolorum quo. Nesciunt totam impedit enim labore blanditiis ullam exercitationem alias laborum molestias quae!
+   Tenetur a, ducimus, non aperiam earum natus doloremque nam fuga eveniet quia explicabo ratione deleniti? Accusantium sed officiis beatae illo maiores error ab perferendis veritatis eveniet! Doloribus consequuntur error cumque.
+   Veritatis quos accusamus quae at molestias nostrum temporibus sed dicta, minima est earum incidunt beatae, maxime, quasi quisquam ea dignissimos asperiores in quas placeat necessitatibus eius! Ea sint repellendus cumque.</p>
+</body>
+</html>

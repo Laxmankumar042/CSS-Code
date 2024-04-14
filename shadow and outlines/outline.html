@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline</title>
+    <style>
+        .box{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: indigo;
+            border: 10px dashed rgb(8, 228, 8);
+            outline: 10px solid red;
+        }
+        .container:hover{
+            transform: rotate(360deg);
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transition-duration: 5s;
+            trans
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="container"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+h1{
+    background-color: aquamarine;
+    /* border-style: solid;
+     border-width: 5px;
+     border-color: black; */
+    border: 5px solid black;
+
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px;
+    
+
+
+    /* border-bottom: 5px solid rgb(7, 67, 47); */
+    /* border-left: 5px solid rgb(7, 67, 47); */
+    /* border-right: 5px solid rgb(7, 67, 47); */
+    /* border-top: 5px solid rgb(7, 67, 47); */
+
+
+    width: 150px;
+    /* height: 100px; */
+
+    /* box model */
+
+    /* padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px; */
+
+    /* padding: 40px 40px 40px 40px; */
+   
+    /* padding: 40px 40px; 1st-top&bottom , 2nd-left&right */
+
+    padding: 40px;
+    border-radius: 10px;
+
+    /* we can also write this all ways like padding*/
+    margin: 50px;
+}
+
+#para1{
+    background-color: rgb(36, 209, 209);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#para2{
+    background-color: bisque;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#para3{
+    background-color: chartreuse;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+section{
+    background-color: red;
+    width: 500px;
+}

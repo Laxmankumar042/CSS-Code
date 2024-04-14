@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+           height: 100vh;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            
+            width: 100vw;
+            height: 100vh;
+            background-color: burlywood;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: repeat(3,150px);
+            gap: 2rem;
+        }
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(206, 57, 57);
+            border: 5px solid rgb(67, 4, 4);
+            transition: all 0.5s linear;
+        }
+        #rotatex:hover{
+            transform: rotatex(50deg);
+        }
+        #rotatey:hover{
+            transform: rotateY(50deg);
+        }
+        #rotatez:hover{
+            transform: rotatez(50deg);
+        }
+        #translatex:hover{
+            transform: translateX(100px);
+        }
+        #translatey:hover{
+            transform: translatey(100px);
+        }
+        #translatez:hover{
+            transform:perspective(50px) translateZ(-100px);
+            transition: all 0.2s linear;
+        }
+        #scalex:hover{
+            transform: scalex(1.3);
+        }
+        #scaley:hover{
+            transform: scaley(1.3);
+        }
+        #scalez:hover{
+            transform:perspective(300px) scaleZ(5) rotatey(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+        <div class="items" id="rotatex">rotatex</div>
+        <div class="items" id="rotatey">rotatey</div>
+        <div class="items" id="rotatez">rotatez</div>
+        <div class="items" id="translatex">translatex</div>
+        <div class="items" id="translatey">translatey</div>
+        <div class="items" id="translatez">translatez</div>
+        <div class="items" id="scalex">scalex</div>
+        <div class="items" id="scaley">scaley</div>
+        <div class="items" id="scalez">scalez</div>
+    </div>
+</div>
+</body>
+</html>

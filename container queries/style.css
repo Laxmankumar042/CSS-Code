@@ -1,0 +1,20 @@
+/* container querie media querie jaisa hai hai bas media querie widow ke according lagate hai or contaienr queries container ke liye */
+
+.container{
+    background-color: cornflowerblue;
+    container-name: laxman;
+    container-type: inline-size;
+}
+
+@container laxman (width<=500px){
+   p{
+    color: red;
+    background-color: yellow;
+   }
+}
+
+/* @media (width<=600px){
+    .container{
+        background-color: red;
+    }
+} */

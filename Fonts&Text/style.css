@@ -1,0 +1,68 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,100&family=Urbanist&display=swap');
+
+
+*{
+  font-family: 'Urbanist', sans-serif;;
+}
+
+.container{
+    width: 800px;
+    text-align: center;
+    background-color: beige;
+}
+body{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* font-properties */
+h2{
+    
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    /* font-variant se small latter capital ho jata hai but uska size change nahi hota hai  */
+    font-variant: small-caps;  
+}
+.para1{
+    font-weight: 700;
+    color: rgb(23, 141, 13);
+    font-style: italic;
+}
+
+
+
+/********** TEXT Properties **************/
+
+
+.para2{
+    text-align: center;
+
+    text-decoration: underline;
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+
+    text-decoration-color: rgb(0, 255, 0);
+
+    text-decoration-style: dashed;
+
+    text-decoration-thickness: 5px;
+
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+
+
+    text-shadow: 2px 2px 5px rgb(255, 0, 166) , 2px 2px 5px blue;
+
+}
+.para3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}

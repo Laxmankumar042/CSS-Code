@@ -1,0 +1,17 @@
+/* Element Selector */
+i{
+    color: red;
+    background-color: black;
+}
+#id_selector{
+    background-color: blue;
+}
+.class_selector{
+    background-color: brown;
+}
+/* Group selector */
+u,article{
+    height: 100px;
+    width: 100px;
+    background-color: lawngreen;
+}

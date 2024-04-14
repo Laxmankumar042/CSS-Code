@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+        /* @media(max-width:600px) */
+        @media(min-width:300px) and (max-width:600px)
+        {
+            .box{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Media queries is a tool in which we can spacify how elements are arranged in different display sizes  -->
+    <div class="box"></div>
+</body>
+</html>

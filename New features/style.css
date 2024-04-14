@@ -1,0 +1,31 @@
+/* CSS nesting (parent div ko select karke uske child ko v uske undar select kiya ja sakta hai)*/
+/* .box {
+  & .div {
+    color: red;
+    &::before{
+        content: "Laxman";
+    }
+  }
+  & p {
+    color: blue;
+  }
+  & button {
+    color: green;
+  }
+} */
+
+
+
+/* Writing Mode  */
+/* h1{
+    writing-mode:vertical-lr;
+} */
+
+
+
+/* accent-color*/
+input{
+    accent-color: green;
+    width: 50px;
+    aspect-ratio: 1;
+}
